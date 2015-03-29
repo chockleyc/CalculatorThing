@@ -46,6 +46,11 @@ var PageTransitions = (function() {
 			nextPage( options );
 		});
 
+		$( '.return-home').on('click', function( event ) {
+			var options = { animation: 30, showPage: 5};
+			nextPage(options);
+		});
+
 		$iterate.on( 'click', function() {
 			if( isAnimating ) {
 				return false;

@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Calculator Thing</title>
+		<link rel="shortcut icon" href="imgs/usolve.ico" />
+		<title>uSolve - bringing the future to education</title>
 		<meta name="description" content="Border Animation Effect: Recreating the effect seen on carlphilippebrenner.com with SVG" />
 		<meta name="keywords" content="svg, border effect, animated border, line, grid item, hover, css" />
 		<meta name="author" content="Codrops" />
@@ -32,7 +33,7 @@
 			<div id="pt-main" class="pt-perspective">
 				<div class="pt-page pt-page-1">
 					<header class="header">
-						<h1>Welcome to CalculatorThing Teacher Portal! <span>Create a session or manage your function configurations</span></h1>
+						<h1>Welcome to uSolve Teacher Portal! <span>Create a session or manage your function configurations</span></h1>
 						<p></p>
 					</header>
 					<section class="demo-2">
@@ -47,7 +48,7 @@
 									</svg>
 									<h3>+</h3>
 									<span>Create</span>
-									<span>New Poop Room</span>
+									<span>New Room</span>
 								</a>
 							</div>
 							<div class="box">
@@ -80,10 +81,54 @@
 					</section>
 				</div><!-- /pt-page-1 -->
 				<div class="pt-page pt-page-2"><!-- Create New Room -->
-					<h1>Yo, this is page 2!</h1>
+					<header class="header">
+						<h1>Creating New Room <span>Please select a function package to use</span></h1>
+						<p></p>
+					</header>
+					<section class="demo-2">
+						<div class="grid">
+							<div class="box">
+								<h3>1</h3>
+								<span>Line One</span>
+								<span>Line Two</span>
+							</div>
+						</div>
+					</section>
 				</div><!-- /pt-page-2 -->
 				<div class="pt-page pt-page-3"><!-- Configure Function Sets -->
-					<h1>Yo, this is page 3!</h1>
+					<header class="header">
+
+					</header>
+					<section class="demo-2">
+						<div class="mstb">
+							<div class="mstb-box" id="box-1">
+								<ul>
+								</ul>
+							</div>
+							<ul class="buttons">
+								<li class="r-to-l"><a><h3><</h3></a></li>
+								<li class="l-to-r"><a><h3>></h3></a></li>
+							</ul>
+							<div class="mstb-box" id="box-2">
+								<ul>
+									<a href="#"><li>mod</li></a>
+									<a href="#"><li>sin</li></a>
+									<a href="#"><li>cos</li></a>
+									<a href="#"><li>tan</li></a>
+									<a href="#"><li>asin</li></a>
+									<a href="#"><li>acos</li></a>
+									<a href="#"><li>atan</li></a>
+									<a href="#"><li>exp</li></a>
+									<a href="#"><li>root</li></a>
+								</ul>
+							</div>
+						</div>
+						<div class="btn-container">
+							<div class="btn-border">
+								<a id="submitPack" class="return-home" href="#"><h3>Submit</h3></a>
+							</div>
+						</div>
+					</section>
 				</div><!-- /pt-page-2 -->
 				<div class="pt-page pt-page-4"><!-- Results From Previous Sessions -->
 					<header class="header">
@@ -93,9 +138,9 @@
 					<section class="demo-2">
 						<div ng-app="roomsApp" ng-controller="RoomsCtrl" class="grid">
 							<div ng-repeat="room in rooms track by $index" class="box">
-								<h3>{{$index + 1}}</h3>
-								<span>{{item.roomId}}</span>
-								<span>{{item.time}}</span>
+								<h3>{{%index}}</h3>
+								<span>Line One</span>
+								<span>Line Two</span>
 							</div>
 						</div><!-- /grid -->
 					</section>
