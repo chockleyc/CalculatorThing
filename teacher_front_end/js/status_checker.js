@@ -4,23 +4,23 @@ var update_statuses = function() {
 		dataType: "html"
 	}).done(function( result ) {
 		if ( result == "-1" ) {
-			$('#tarif_status').removeClass('active');
-			$('#tarif_status').removeClass('disconnected');
-			$('#tarif_status').addClass('error');
+			$('.tarif_status').removeClass('active');
+			$('.tarif_status').removeClass('disconnected');
+			$('.tarif_status').addClass('error');
 		}
 		else {
 			var jsonResult = JSON.parse(result);
 			for (var student in jsonResult) {
 				if (student.student_id == 3) {
 					if (student.status == 1) {
-						$('#tarif_status').removeClass('error');
-						$('#tarif_status').removeClass('disconnected');
-						$('#tarif_status').addClass('active');
+						$('.tarif_status').removeClass('error');
+						$('.tarif_status').removeClass('disconnected');
+						$('.tarif_status').addClass('active');
 					}
 					else {
-						$('#tarif_status').removeClass('error');
-						$('#tarif_status').removeClass('active');
-						$('#tarif_status').addClass('disconnected');
+						$('.tarif_status').removeClass('error');
+						$('.tarif_status').removeClass('active');
+						$('.tarif_status').addClass('disconnected');
 					}
 				}
 			}

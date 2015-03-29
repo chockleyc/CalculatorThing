@@ -251,15 +251,15 @@ section h2 {
 	vertical-align: middle;
 }
 
-span.active {
+.active {
 	color: rgba(255, 0, 0, 1);
 }
 
-span.disconnected {
+.disconnected {
 	color: rgba(0, 255, 0, 1);
 }
 
-span.error {
+.error {
 	color: rgba(255, 255, 0, 1);
 }
 
