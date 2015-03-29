@@ -252,11 +252,11 @@ section h2 {
 }
 
 .active {
-	color: rgba(255, 0, 0, 1);
+	color: rgba(0, 255, 0, 1);
 }
 
 .disconnected {
-	color: rgba(0, 255, 0, 1);
+	color: rgba(255, 0, 0, 1);
 }
 
 .error {
