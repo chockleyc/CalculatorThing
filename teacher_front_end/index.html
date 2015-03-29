@@ -91,81 +91,11 @@
 						<p></p>
 					</header>
 					<section class="demo-2">
-						<div class="grid">
-							<div class="box">
-								<h3>1</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>2</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>3</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>4</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>5</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>6</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>7</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>8</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>9</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>10</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>11</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>12</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>13</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>14</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
-							</div>
-							<div class="box">
-								<h3>15</h3>
-								<span>Results From</span>
-								<span>Previous Sessions</span>
+						<div ng-app="roomsApp" ng-controller="RoomsCtrl" class="grid">
+							<div ng-repeat="room in rooms track by $index" class="box">
+								<h3>{{$index + 1}}</h3>
+								<span>{{item.roomId}}</span>
+								<span>{{item.time}}</span>
 							</div>
 						</div><!-- /grid -->
 					</section>
@@ -179,6 +109,7 @@
 			</div><!-- /pt-main -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
 		<script src="js/pagetransitions.js"></script>
 	</body>
 </html>
