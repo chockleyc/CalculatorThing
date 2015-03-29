@@ -259,6 +259,10 @@ span.disconnected {
 	color: rgba(0, 255, 0, 1);
 }
 
+span.error {
+	color: rgba(255, 255, 0, 1);
+}
+
 @media screen and (max-width: 25em) {
 
 	.icon span {
