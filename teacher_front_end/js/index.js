@@ -52,7 +52,7 @@ $('#submitPack').on('click', function() {
 		dataType: "html"
 	}).done(function( result ) {
 		if ( result == "-1" ) {
-			alert("There was an error.");
+			alert("There was an error.  Sent this url: " +  url);
 		}
 		else {
 			alert(result);
