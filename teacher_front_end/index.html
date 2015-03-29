@@ -27,7 +27,7 @@
 	<body>
 			<!-- Top Navigation -->
 			<div class="top clearfix">
-				<span class="left"><a class="icon icon-prev" data-animation="30" data-targetpage="5" href="#"><span>Contact Us</span></a></span>
+				<span class="left"><a class="icon icon-prev" data-animation="30" data-targetpage="5" href="#"><span>Back Home</span></a></span>
 				<span class="right"><a class="icon icon-drop" href="http://tympanus.net/codrops/?p=18551"><span>Login</span></a></span>
 			</div>
 			<div id="pt-main" class="pt-perspective">
@@ -88,9 +88,18 @@
 					<section class="demo-2">
 						<div class="grid">
 							<div class="box">
-								<h3>1</h3>
-								<span>Line One</span>
-								<span>Line Two</span>
+								<a data-animation="31" data-targetpage="4" href="#">
+									<h3>1</h3>
+									<span>Algebra</span>
+									<span></span>
+								</a>
+							</div>
+							<div class="box">
+								<a data-animation="31" data-targetpage="4" href="#">
+									<h3>2</h3>
+									<span>Trigonometry</span>
+									<span></span>
+								</a>
 							</div>
 						</div>
 					</section>
@@ -145,8 +154,23 @@
 						</div><!-- /grid -->
 					</section>
 				</div><!-- /pt-page-2 -->
-				<div class="pt-page pt-page-5"><!-- Contact Us -->
-					<h1>Some Placeholder Text</h1>
+				<div class="pt-page pt-page-5"><!-- Created Room -->
+					<header class="header">
+						<h1>Student Monitoring Room <span>Currently in room: 5</span></h1>
+						<p>A student's status may be <span style="color: rgba(0, 255, 0, 1);">Active</span> or <span style="color: rgba(255, 0, 0, 1);">Inactive</span.</p>
+					</header>
+					<section class="demo-2">
+						<div class="grid">
+							<div class="box student-box">
+								<a data-animation="31" data-targetpage="5" href="#">
+								<a href="#">
+									<h3>@</h3>
+									<span>Tarif</span>
+									<span class="active">status</span>
+								</a>
+							</div>
+						</div>
+					</section>
 				</div><!-- /pt-page-2 -->
 				<div class="pt-page pt-page-6"><!-- Login -->
 					<h1>Some Placeholder Text</h1>
@@ -156,5 +180,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/pagetransitions.js"></script>
+		<script src="js/status_checker.js"></script>
 	</body>
 </html>
